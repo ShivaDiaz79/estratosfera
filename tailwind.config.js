@@ -2,8 +2,9 @@
 module.exports = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './node_modules/flowbite-react/**/*.js',
   ],
   theme: {
     extend: {
@@ -14,5 +15,19 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  ontFamily: {
+    saira: ['Saira Condensed', 'sans-serif'],
+    calabacin: ["Calabacín", " cursive"],
+   orbitron: ['Orbitron', 'sans-serif'],
+   dancing : ['Dancing Script',' cursive'],
+   
+  },
+
+
+
+  plugins: [
+
+      require('flowbite/plugin')
+  
+  ],
 }
